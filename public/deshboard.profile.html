@@ -1,0 +1,907 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HUGO | Ressources Humanisees</title>
+    <!--  bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- google font Montserrat  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- custom stylesheet link  -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <!-- navbar part html start  -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 position-fixed w-100">
+      <div class="container-fluid px-lg-5 profile-container">
+        <a class="navbar-brand" href="#"><img src="./img/logos/nav-logo.png" alt="logo.png" class="img-fluid" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-lg-4" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Proﬁl</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Rendez-vous</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Calendrier</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item px-3 d-flex align-items-center">
+              <a class="position-relative" href="#">
+                <img src="./img/nav-icon/ball-icon.png" alt="ball-icon.png" class="img-fluid" />
+                <span class="position-absolute top-0 start-100 translate-middle text-dark badge rounded-circle bg-secondary p-1">
+                  12
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="d-flex align-items-center" href="#">
+                <img src="./img/nav-icon/nav-profile-icon.png" alt="profile-icon" class="img-fluid rounded-circle" />
+                <div class="profile-icon ms-3">
+                  <h6 class="fw-normal text-dark">DUPONT</h6>
+                  <p class="fw-normal mb-0 text-dark">Jean-Claude</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar part html end  -->
+
+    <!-- profile part html start  -->
+    <div class="profile vh-100">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-4">
+            <div class="profile__setting bg-white-2 pb-4 shadow-lg h-100">
+              <div class="profile__setting-info text-center pt-3 pb-4 position-relative">
+                <div class="profile-img text-center pt-5 mb-3">
+                  <img src="./img/profile-icon/profile-icon.png" alt="profile-icon.png" class="img-fluid" />
+                </div>
+                <h4 class="text-white">Dupont</h4>
+                <p class="text-white mb-1">Jean-Claude</p>
+                <h4 class="text-secondary">Coach Certiﬁé</h4>
+                <div class="view-edit-icon position-absolute">
+                  <a class="bg-tertiary view d-inline-block p-1 rounded-circle me-2" href="#"><img src="./img/profile-icon/profile-view.svg" alt="profile-view.png" class="img-fluid" /></a>
+                  <a class="bg-tertiary d-inline-block rounded-circle" href="#"><img src="./img/profile-icon/profile-edit.svg" alt="profile-edit.png" class="img-fluid" /></a>
+                </div>
+              </div>
+              <div class="profile__setting-presentation bg-white mx-4 py-3 my-4">
+                <h5 class="mb-3">Spécialités</h5>
+                <p class="mb-0 text-dark">Je suis spécialisé en gestion et optimisation du temps en entreprise et dans le cadre de vie personnel. L’évolution technologique, la tendance au multi métiers, l’attrait pour l’entreprenariat, l’équilibre vie pro/vie perso … La notion de temps et d’organisation n’a jamais été aussi présente dans nos vies. Grâce au coaching, vous priorisez vos tâches, identiﬁez votre ligne directrice et faites les bons choix.</p>
+              </div>
+              <div class="profile__setting-presentation bg-white mx-4 py-3">
+                <h5 class="mb-3">Présentation</h5>
+                <div class="mb-2 pt-1">
+                  <a class="bg-tertiary px-4 rounded-pill py-1 text-dark" href="#"> <span>gestion</span> </a>
+                </div>
+                <div class="mb-2">
+                  <a class="bg-tertiary px-4 rounded-pill py-1 text-dark" href="#"> <span>optimisation</span> </a>
+                </div>
+                <div class="mb-2">
+                  <a class="bg-tertiary px-4 rounded-pill py-1 text-dark" href="#"> <span>technologie</span> </a>
+                </div>
+              </div>
+              <div class="profile__setting-logo text-center py-5 mt-3">
+                <a class="navbar-brand" href="#"><img src="./img/profile-icon/profile-logo.png" alt="logo.png" class="img-fluid" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="profile__content">
+              <!-- rendz-vous coaching part html start-->
+              <div class="row mb-4">
+                <div class="col-lg-6 ms-0">
+                  <div class="profile__content-randez bg-white shadow-lg pb-2 overflow-hidden position-relative h-100">
+                    <div class="title d-flex justify-content-between bg-primary p-3 align-items-center">
+                      <h4 class="text-white"><span class="bg-secondary p-1 rounded-circle text-dark me-2">25</span> Rendez-vous <span class="text-secondary">à venir</span></h4>
+                      <div class="big-screen-icon">
+                        <a class="bg-secondary rounded-circle d-inline-block" href="#"><img src="./img/profile-icon/full-szie-icon.png" alt="full-szie-icon.png" class="img-fluid" /></a>
+                      </div>
+                    </div>
+                    <div class="table-responsive-lg">
+                      <table class="table table-striped border-white px-3">
+                        <thead>
+                          <tr>
+                            <th class="bg-tertiary ps-4" scope="col">Date</th>
+                            <th class="bg-tertiary" scope="col">NOM</th>
+                            <th class="bg-tertiary fw-normal" scope="col">Séance</th>
+                            <th class="bg-tertiary fw-normal text-center" scope="col">Statut</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="ps-4">28/03/23 <span class="fw-normal ms-4">J - 1</span></th>
+                            <td>
+                              <h6>MONTAIGNE</h6>
+                              <p class="mb-0">Sophie</p>
+                            </td>
+                            <td>Séance 3</td>
+                            <td class="valide pe-3">
+                              <div class="d-flex align-items-center">
+                                <span class="me-2 text-primary">validé</span><a class="d-inline-block bg-primary p-1 rounded-circle" href="#"><img src="./img/profile-icon/valide-icon.svg" alt="valid-icon" class="img-fluid" /></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="ps-4">01/04/23 <span class="fw-normal ms-4">J - 2</span></th>
+                            <td>
+                              <h6>TRICHU</h6>
+                              <p class="mb-0">John</p>
+                            </td>
+                            <td>Séance 2</td>
+                            <td class="valide pe-3">
+                              <div class="d-flex align-items-center">
+                                <span class="me-2 text-primary">validé</span><a class="d-inline-block bg-primary p-1 rounded-circle" href="#"><img src="./img/profile-icon/valide-icon.svg" alt="valid-icon" class="img-fluid" /></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="ps-4">28/05/23 <span class="fw-normal ms-4">J - 1</span></th>
+                            <td>
+                              <h6>MONTAIGNE</h6>
+                              <p class="mb-0">Sophie</p>
+                            </td>
+                            <td>Séance 3</td>
+                            <td class="valide pe-3">
+                              <div class="d-flex align-items-center">
+                                <span class="me-2 text-primary">validé</span><a class="d-inline-block bg-primary p-1 rounded-circle" href="#"><img src="./img/profile-icon/valide-icon.svg" alt="valid-icon" class="img-fluid" /></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="ps-4">28/03/23 <span class="fw-normal ms-4">J - 1</span></th>
+                            <td>
+                              <h6>MONTAIGNE</h6>
+                              <p class="mb-0">Sophie</p>
+                            </td>
+                            <td>
+                              <p class="mb-0">Entretient</p>
+                              <p class="mb-0">préliminaire</p>
+                            </td>
+                            <td class="valide pe-3">
+                              <div class="d-flex align-items-center">
+                                <span class="me-2">à valider</span><a class="d-inline-block bg-secondary p-1 rounded-circle" href="#"><img style="padding-top: 2px" src="./img/profile-icon/valide-edit.svg" alt="valid-icon" class="img-fluid" /></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="ps-4">28/03/23 <span class="fw-normal ms-4">J - 1</span></th>
+                            <td>
+                              <h6>MONTAIGNE</h6>
+                              <p class="mb-0">Sophie</p>
+                            </td>
+                            <td>Séance 3</td>
+                            <td class="valide pe-3">
+                              <div class="d-flex align-items-center">
+                                <span class="me-2 text-primary">validé</span><a class="d-inline-block bg-primary p-1 rounded-circle" href="#"><img src="./img/profile-icon/valide-icon.svg" alt="valid-icon" class="img-fluid" /></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="ps-4">28/03/23 <span class="fw-normal ms-4">J - 1</span></th>
+                            <td>
+                              <h6>MONTAIGNE</h6>
+                              <p class="mb-0">Sophie</p>
+                            </td>
+                            <td>Séance 3</td>
+                            <td class="valide pe-3">
+                              <div class="d-flex align-items-center">
+                                <span class="me-2 text-primary">validé</span><a class="d-inline-block bg-primary p-1 rounded-circle" href="#"><img src="./img/profile-icon/valide-icon.svg" alt="valid-icon" class="img-fluid" /></a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="custom-screen-size bg-secondary m-auto position-absolute">
+                      <a href="#">
+                        <div class="m-auto text-center icon d-flex justify-content-center h-100">
+                          <span class="d-inline-block rounded-circle bg-primary me-1"></span>
+                          <span class="d-inline-block rounded-circle bg-primary me-1"></span>
+                          <span class="d-inline-block rounded-circle bg-primary"></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 me-0">
+                  <div class="position-relative coaching">
+                    <!-- profile-coaching-list -->
+                    <div class="profile__content-randez profile__content-coaching bg-white shadow-lg overflow-hidden position-relative">
+                      <div class="title d-flex justify-content-between p-3 align-items-center">
+                        <h4 class="text-white"><span class="bg-secondary p-1 rounded-circle text-dark me-2">14</span> Coaching <span class="text-secondary"> en cours</span> <span class="fw-normal">- Programme</span></h4>
+                        <div class="big-screen-icon">
+                          <a class="bg-tertiary rounded-circle d-inline-block" href="#"><img src="./img/profile-icon/full-szie-icon.png" alt="full-szie-icon.png" class="img-fluid" /></a>
+                        </div>
+                      </div>
+                      <div class="coaching-items">
+                        <div class="table-responsive-lg">
+                          <table class="table border-white table-hover table-striped mb-0">
+                            <tbody>
+                              <tr class="coaching-details">
+                                <th class="py-4 ps-4" scope="row">
+                                  <div class="coaching-icon">
+                                    <img src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid w-100" />
+                                  </div>
+                                </th>
+                                <td class="py-4">
+                                  <h6>MONTAIGNE <span class="fw-normal">Sophie</span></h6>
+                                </td>
+                                <td class="py-4">Séance 3</td>
+                                <td class="py-4 fw-bold">30/05/23</td>
+                                <td class="py-4 pe-4">14:00</td>
+                              </tr>
+                              <tr class="coaching-details">
+                                <th class="py-4 ps-4" scope="row">
+                                  <div class="coaching-icon">
+                                    <img src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid w-100" />
+                                  </div>
+                                </th>
+                                <td class="py-4">
+                                  <h6>TRICHU <span class="fw-normal">John</span></h6>
+                                </td>
+                                <td class="py-4">Séance 3</td>
+                                <td class="py-4 fw-bold">30/05/23</td>
+                                <td class="py-4 pe-4">14:00</td>
+                              </tr>
+                              <tr class="coaching-details">
+                                <th class="py-4 ps-4" scope="row">
+                                  <div class="coaching-icon">
+                                    <img src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid w-100" />
+                                  </div>
+                                </th>
+                                <td class="py-4">
+                                  <h6>MONTAIGNE <span class="fw-normal">Sophie</span></h6>
+                                </td>
+                                <td class="py-4">Séance 3</td>
+                                <td class="py-4 fw-bold">30/05/23</td>
+                                <td class="py-4 pe-4">14:00</td>
+                              </tr>
+                              <tr class="coaching-details active">
+                                <th class="py-4 ps-4" scope="row">
+                                  <div class="coaching-icon">
+                                    <img src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid w-100" />
+                                  </div>
+                                </th>
+                                <td class="py-4">
+                                  <h6>TRICHU <span class="fw-normal">John</span></h6>
+                                </td>
+                                <td class="py-4">Séance 3</td>
+                                <td class="py-4 fw-bold">30/05/23</td>
+                                <td class="py-4 pe-4">14:00</td>
+                              </tr>
+                              <tr class="coaching-details">
+                                <th class="py-4 ps-4" scope="row">
+                                  <div class="coaching-icon">
+                                    <img src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid w-100" />
+                                  </div>
+                                </th>
+                                <td class="py-4">
+                                  <h6>MONTAIGNE <span class="fw-normal">Sophie</span></h6>
+                                </td>
+                                <td class="py-4">Séance 3</td>
+                                <td class="py-4 fw-bold">30/05/23</td>
+                                <td class="py-4 pe-4">14:00</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="custom-screen-size bg-secondary m-auto position-absolute">
+                          <a href="#">
+                            <div class="m-auto text-center icon d-flex justify-content-center h-100">
+                              <span class="d-inline-block rounded-circle bg-primary me-1"></span>
+                              <span class="d-inline-block rounded-circle bg-primary me-1"></span>
+                              <span class="d-inline-block rounded-circle bg-primary"></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- profile-coaching-list -->
+
+                    <!-- profile-coaching-item-popup start -->
+                    <div class="profile__content-coaching-detailsPopUp detailsPopUp profile__content-randez bg-tertiary shadow-lg position-absolute overflow-hidden">
+                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-4 pe-5 py-3 border-bottom border-white">
+                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                        <div class="coaching-name">
+                          <h6 class="mb-0">Validation séance N°3</h6>
+                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                        </div>
+                        <div class="coaching-hours"><span>4 h</span></div>
+                      </div>
+                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-4 pe-5 py-3 border-bottom border-white">
+                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                        <div class="coaching-name">
+                          <h6 class="mb-0">Validation séance N°3</h6>
+                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                        </div>
+                        <div class="coaching-hours"><span>6 h</span></div>
+                      </div>
+                      <div class="coaching-details-item bg-white d-flex align-items-center justify-content-between ps-4 pe-5 py-3 border-bottom border-white">
+                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                        <div class="coaching-name">
+                          <h6 class="mb-0">Validation séance N°3</h6>
+                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                        </div>
+                        <div class="coaching-hours"><span>1 j</span></div>
+                      </div>
+                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-4 pe-5 py-3 border-bottom border-white">
+                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                        <div class="coaching-name">
+                          <h6 class="mb-0">Validation séance N°3</h6>
+                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                        </div>
+                        <div class="coaching-hours"><span>2 j</span></div>
+                      </div>
+                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-4 pe-5 py-3">
+                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                        <div class="coaching-name">
+                          <h6 class="mb-0">Validation séance N°3</h6>
+                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                        </div>
+                        <div class="coaching-hours"><span>2 j</span></div>
+                      </div>
+                      <div class="custom-screen-size bg-dark m-auto position-absolute">
+                        <a href="#">
+                          <div class="m-auto text-center icon d-flex justify-content-center h-100">
+                            <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
+                            <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
+                            <span class="d-inline-block rounded-circle bg-tertiary"></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- profile-coaching-item-popup start -->
+                  </div>
+                </div>
+                <!-- rendz-vous coaching part html end-->
+              </div>
+              <!-- caleander part html start -->
+              <div class="profile__content-calendrier profile__content-randez bg-white-2 shadow-lg overflow-hidden position-relative">
+                <div class="title bg-dark d-flex justify-content-between p-3 align-items-center">
+                  <h4 class="text-white">
+                    <span class="bg-secondary p-1 rounded-circle text-dark me-2 d-inline-block"><img src="./img/profile-icon/calendrier.png" alt="calendrier.png" class="img-fluid" /></span>Calendrier
+                  </h4>
+                  <div class="big-screen-icon">
+                    <a class="bg-tertiary rounded-circle d-inline-block" href="#"><img src="./img/profile-icon/full-szie-icon.png" alt="full-szie-icon.png" class="img-fluid" /></a>
+                  </div>
+                </div>
+                <div class="calendrier-summary d-flex align-items-center pt-3 px-3 mb-3">
+                  <div class="arrow border bg-white border-secondary rounded-2">
+                    <button class="btn px-3 rounded-end-0 border-0"><img src="./img/profile-icon/left-arrow.png" alt="left-arrow.png" class="img-fluid" /></button>
+                    <button class="btn px-3 rounded-start-0 border-0"><img src="./img/profile-icon/right-arrow.png" alt="left-arrow.png" class="img-fluid" /></button>
+                  </div>
+                  <div class="today border border-secondary bg-white rounded-2 py-1 px-3 ms-2 fw-medium"><a href="#">aujourd’hui</a></div>
+                  <div class="header rounded-2 text-center flex-grow-1">
+                    <h3>17 - 23 juil.2023</h3>
+                  </div>
+                  <div class="date-schedule d-flex border border-secondary bg-white rounded-2 align-items-center justify-content-center">
+                    <a href="#" class="mols fw-medium px-3 h-100">mois</a>
+                    <a href="#" class="semaine fw-medium px-3 bg-white-2 h-100">semaine</a>
+                    <a href="#" class="jour fw-medium px-3 h-100">jour</a>
+                  </div>
+                </div>
+                <!-- calendrier table screen  -->
+                <div class="calendrier-table position-relative overflow-hidden px-3">
+                  <table class="table table-striped table-bordered">
+                    <tbody class="table-tbody pb-0">
+                      <tr>
+                        <th scope="row"></th>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                        <td>lun. 17/07</td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">6:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11:00</th>
+                        <td></td>
+                        <td class="time-schedule position-relative">
+                          <div class="time-schedule-item position-absolute top-0 start-0 bg-secondary w-100 px-3 py-2">
+                            <p class="mb-1"><span class="fw-bold">14:00 - 16:00</span> / Séance 3</p>
+                            <p class="mb-0"><span class="fw-bold">MONTAIGNE</span> Sophie</p>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="time-schedule position-relative">
+                          <div class="time-schedule-item position-absolute top-0 start-0 bg-primary w-100 px-3 py-2">
+                            <p class="mb-1 text-white"><span class="fw-bold">14:00 - 16:00</span> / Séance 3</p>
+                            <p class="mb-0 text-white"><span class="fw-bold">MONTAIGNE</span> Sophie</p>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13:00</th>
+                        <td></td>
+                        <td class="time-schedule position-relative">
+                          <div class="time-schedule-item position-absolute top-0 start-0 bg-secondary w-100 px-3 py-2">
+                            <p class="mb-1"><span class="fw-bold">14:00 - 16:00</span> / Séance préliminaire</p>
+                            <p class="mb-0"><span class="fw-bold">TRICHU</span> Jean-Claude</p>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td class="time-schedule position-relative">
+                          <div class="time-schedule-item position-absolute top-0 start-0 bg-secondary w-100 px-3 py-2">
+                            <p class="mb-1"><span class="fw-bold">14:00 - 16:00</span> / Séance préliminaire</p>
+                            <p class="mb-0"><span class="fw-bold">TRICHU</span> Jean-Claude</p>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14:00</th>
+                        <td></td>
+                        <td class="time-schedule-line"></td>
+                        <td></td>
+                        <td class="time-schedule position-relative">
+                          <div class="time-schedule-item position-absolute top-0 start-0 bg-secondary w-100 px-3 py-2">
+                            <p class="mb-1"><span class="fw-bold">14:00 - 16:00</span> / Séance préliminaire</p>
+                            <p class="mb-0"><span class="fw-bold">TRICHU</span> Jean-Claude</p>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">15:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">16:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">17:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">18:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">19:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">20:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">21:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">22:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">23:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">24:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- calendrier table  -->
+
+                <!-- custom screen Icon  -->
+                <div class="custom-screen-size bg-dark m-auto position-absolute">
+                  <a href="#">
+                    <div class="m-auto text-center icon d-flex justify-content-center h-100">
+                      <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
+                      <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
+                      <span class="d-inline-block rounded-circle bg-tertiary"></span>
+                    </div>
+                  </a>
+                </div>
+                <!-- custom screen Icon  -->
+              </div>
+              <!-- caleander part html start -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile part html end  -->
+
+    <!--  jquery script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--  bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom script  -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

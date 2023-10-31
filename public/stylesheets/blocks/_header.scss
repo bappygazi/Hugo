@@ -1,0 +1,15 @@
+/** @format */
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      .badge {
+        top: 5px !important;
+        border: 1px solid $dark;
+      }
+      .nav-link {
+        color: $dark;
+        font-size: $font-size-nav;
+      }
+    }
+  }
+}

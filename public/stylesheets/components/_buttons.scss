@@ -1,0 +1,75 @@
+/**
+ * ==========================================================================
+ *    #BUTTONS
+ *    ==========================================================================
+ *
+ * @format
+ */
+
+.c-btn {
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn-primary {
+  border: none;
+  height: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: $secondary-color;
+  font-size: $font-size-button;
+  background-color: $primary-color !important;
+  &:active,
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    color: $white !important;
+    text-decoration: none;
+    background-color: $primary-color-9 !important;
+  }
+}
+
+.c-btn-secondary {
+  background-color: #2f4054;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #1d2733;
+  }
+}
+
+.c-btn-tertiary {
+  background-color: #fff;
+  color: #4a8ec2;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #4a8ec2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #3774a2;
+  }
+}

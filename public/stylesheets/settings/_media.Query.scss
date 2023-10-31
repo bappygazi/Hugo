@@ -1,0 +1,50 @@
+/** @format */
+
+@media (min-width: 1700px) and (max-width: 1919px) {
+  .profile-container {
+    transform: scale(0.9);
+  }
+  .profile {
+    padding-top: 50px;
+    transform: scale(0.8);
+  }
+  .profile {
+    &__setting {
+      padding-bottom: 0px !important;
+      &-logo {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+      }
+    }
+    &__content {
+      &-calendrier {
+        .calendrier-table {
+          .table {
+            .table-tbody {
+              height: 258px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2099px) {
+  .profile-container,
+  .profile {
+    transform: scale(0.8);
+  }
+  .profile {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 2100px) and (max-width: 2299px) {
+  .profile-container,
+  .profile {
+    transform: scale(0.9);
+  }
+  .profile {
+    padding-top: 90px;
+  }
+}

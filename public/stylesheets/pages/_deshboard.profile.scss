@@ -1,0 +1,237 @@
+/** @format */
+.profile {
+  &__setting {
+    border-radius: 25px;
+    max-width: 480px;
+    &-info {
+      p {
+        font-size: $font-size-content;
+      }
+      border-top-right-radius: 25px;
+      border-top-left-radius: 25px;
+      background: $primary-color;
+      background: linear-gradient(180deg, $primary-color 0%, rgba(179, 128, 160, 1) 75%, $secondary-color 100%);
+      .view-edit-icon {
+        top: 20px;
+        right: 20px;
+        a {
+          &.view {
+            line-height: 15px;
+          }
+          width: 25px;
+          height: 25px;
+          line-height: 0px;
+          padding: 5.5px;
+        }
+      }
+    }
+    &-presentation {
+      border-radius: 6px;
+      padding-left: 42px;
+      padding-right: 42px;
+      p {
+        line-height: 17px;
+      }
+    }
+  }
+  &__content {
+    &-randez {
+      border-radius: 26px;
+      .title {
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        .big-screen-icon {
+          a {
+            width: 25px;
+            height: 25px;
+            text-align: center;
+          }
+        }
+      }
+      .table {
+        font-size: $font-size-table;
+
+        .valide {
+          vertical-align: middle;
+          span {
+            width: 62%;
+            text-align: right;
+          }
+          a {
+            width: 25px;
+            height: 25px;
+            line-height: 14px;
+          }
+        }
+      }
+      .custom-screen-size {
+        right: -35px;
+        bottom: -25px;
+        transform: rotate(-45deg);
+        width: 80px;
+        height: 60px;
+        span {
+          width: 4px;
+          height: 4px;
+        }
+        .icon {
+          padding-top: 10px;
+        }
+      }
+    }
+    &-coaching {
+      .title {
+        background: rgb(255, 182, 152);
+        background: linear-gradient(280deg, rgba(255, 182, 152, 1) 0%, rgba(177, 131, 166, 1) 44%, rgba(158, 119, 170, 1) 71%, rgba(135, 104, 174, 1) 100%);
+      }
+      .coaching-items {
+        .table {
+          &.table-hover > tbody > tr:active > * {
+            background-color: rgb(0 0 0 / 24%);
+          }
+          tbody {
+            vertical-align: middle;
+          }
+        }
+      }
+      &-detailsPopUp {
+        top: -100px;
+        right: 50px;
+        width: 390px;
+        border-radius: 26px;
+      }
+    }
+    &-calendrier {
+      .title {
+        h4 {
+          span {
+            width: 25px !important;
+            height: 25px !important;
+            line-height: 15px;
+            text-align: center;
+          }
+        }
+      }
+      .calendrier-summary {
+        .arrow {
+          position: relative;
+          &::after {
+            top: 0;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            content: "";
+            position: absolute;
+            background-color: $dark-color-3;
+            transform: translateX(-50%);
+          }
+          .btn {
+            height: 40px;
+          }
+        }
+        .today {
+          height: 40px;
+          line-height: 28px;
+        }
+        .date-schedule {
+          height: 40px;
+          a {
+            line-height: 36px;
+          }
+        }
+      }
+      .calendrier-table {
+        .table > :not(caption) > * > * {
+          padding: 4px 0.5rem;
+          &:hover {
+            background-color: $white-2;
+          }
+        }
+        .table {
+          .table-tbody {
+            display: block;
+            overflow: auto;
+            white-space: nowrap;
+            height: 335px;
+            width: 1000px;
+            &::-webkit-scrollbar {
+              width: 14px;
+              height: 14px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+              padding: 0;
+              z-index: 2;
+              position: fixed;
+              right: 0;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+              border-radius: 30px;
+              border: 1px solid $gray-color;
+              background: $gray-color-25;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+              background: $gray-color;
+            }
+            tr {
+              th {
+                width: 90px;
+                height: 28px;
+                display: inline-block;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+
+                &[scope="row"] {
+                  position: -webkit-sticky;
+                  position: sticky;
+                  left: 0;
+                  z-index: 1;
+                }
+              }
+              td {
+                width: 300px;
+                height: 30px;
+                display: inline-block;
+              }
+              .time-schedule {
+                margin-bottom: 1px;
+                .time-schedule-item {
+                  border-radius: 6px;
+                }
+              }
+              .time-schedule-line {
+                position: relative;
+                &::after {
+                  left: 0;
+                  bottom: -2px;
+                  content: "";
+                  width: 100%;
+                  height: 2px;
+                  position: absolute;
+                  background-color: $primary-color;
+                }
+                &::before {
+                  left: -9px;
+                  content: "";
+                  width: 15px;
+                  bottom: -8px;
+                  height: 15px;
+                  border-radius: 50%;
+                  position: absolute;
+                  background-color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

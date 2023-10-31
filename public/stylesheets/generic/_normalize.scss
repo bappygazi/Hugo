@@ -1,0 +1,74 @@
+/**
+ * ==========================================================================
+ *    #GENERIC
+ *    ==========================================================================
+ *
+ * @format
+ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+li {
+  list-style-type: none;
+}
+label {
+  cursor: pointer;
+}
+.form-control {
+  outline: none;
+  border: none;
+  &:focus,
+  :active,
+  :hover,
+  :focus-within,
+  :focus-visible,
+  :visited {
+    color: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: none !important;
+  }
+}
+
+/// Font family
+
+$font-primary: "Montserrat", sans-serif;
+
+/// Font size
+$font-size-content: 1rem;
+$font-size-button: 1.25rem;
+$font-size-nav: 1.125rem;
+$font-size-table: 0.875rem;
+
+@media (min-width: 1920px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1620px;
+  }
+}
+@media (min-width: 1700px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1620px;
+  }
+}

@@ -1,0 +1,39 @@
+/** @format */
+
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+
+$white: #ffffff;
+$white-2: #efefef;
+$dark: #323232;
+$tertiary: #fadfd3;
+$primary-color: #8768ae;
+$secondary-color: #ffaa87;
+$gray-color: #afafaf;
+// $quaternary;
+$gray-color-25: rgba($gray-color, 0.25);
+$primary-color-9: rgba($primary-color, 0.9);
+$dark-color-3: rgba($dark, 0.3);
+
+.text-primary {
+  color: $primary-color !important;
+}
+.text-secondary {
+  color: $secondary-color !important;
+}
+.text-dark {
+  color: $dark !important;
+}
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
+.bg-white-2 {
+  background-color: $white-2 !important;
+}
+.bg-tertiary {
+  background-color: $tertiary !important;
+}
+.bg-primary {
+  background-color: $primary-color !important;
+}

@@ -1,0 +1,20 @@
+/** @format */
+
+//SETTINGS
+@import "settings/colors";
+@import "settings/media.Query";
+
+//GENERIC
+@import "generic/normalize";
+
+//ELEMENTS
+@import "elements/body";
+@import "elements/headings";
+
+//COMPONENTS
+@import "components/buttons";
+
+//PAGES
+@import "pages/home";
+@import "pages/login";
+@import "pages/deshboard.profile";
