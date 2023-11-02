@@ -52,23 +52,18 @@ $font-size-button: 1.25rem;
 $font-size-nav: 1.125rem;
 $font-size-table: 0.875rem;
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1620px;
+    max-width: 1650px;
   }
 }
-@media (min-width: 1700px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1620px;
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1780px;
   }
 }

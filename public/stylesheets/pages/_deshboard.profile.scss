@@ -27,10 +27,9 @@
     }
     &-presentation {
       border-radius: 6px;
-      padding-left: 42px;
-      padding-right: 42px;
       p {
         line-height: 17px;
+        font-size: 13px;
       }
     }
   }
@@ -152,8 +151,8 @@
             display: block;
             overflow: auto;
             white-space: nowrap;
-            height: 335px;
-            width: 1000px;
+            height: 306px;
+            width: 42%;
             &::-webkit-scrollbar {
               width: 14px;
               height: 14px;
@@ -181,7 +180,7 @@
             tr {
               th {
                 width: 90px;
-                height: 28px;
+                height: 30px;
                 display: inline-block;
                 position: -webkit-sticky;
                 position: sticky;

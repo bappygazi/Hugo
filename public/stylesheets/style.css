@@ -32,47 +32,6 @@
 }
 
 /** @format */
-@media (min-width: 1700px) and (max-width: 1919px) {
-  .profile-container {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .profile {
-    padding-top: 50px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  .profile__setting {
-    padding-bottom: 0px !important;
-  }
-  .profile__setting-logo {
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
-  }
-  .profile__content-calendrier .calendrier-table .table .table-tbody {
-    height: 258px !important;
-  }
-}
-@media (min-width: 1920px) and (max-width: 2099px) {
-  .profile-container,
-  .profile {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  .profile {
-    padding-top: 50px;
-  }
-}
-@media (min-width: 2100px) and (max-width: 2299px) {
-  .profile-container,
-  .profile {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  .profile {
-    padding-top: 90px;
-  }
-}
 /**
  * ==========================================================================
  *    #GENERIC
@@ -123,24 +82,19 @@ label {
   background-color: none !important;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1620px;
+    max-width: 1650px;
   }
 }
-@media (min-width: 1700px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1620px;
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1780px;
   }
 }
 /**
@@ -345,11 +299,10 @@ p {
 }
 .profile__setting-presentation {
   border-radius: 6px;
-  padding-left: 42px;
-  padding-right: 42px;
 }
 .profile__setting-presentation p {
   line-height: 17px;
+  font-size: 13px;
 }
 .profile__content-randez {
   border-radius: 26px;
@@ -452,8 +405,8 @@ p {
   display: block;
   overflow: auto;
   white-space: nowrap;
-  height: 335px;
-  width: 1000px;
+  height: 306px;
+  width: 42%;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -478,7 +431,7 @@ p {
 }
 .profile__content-calendrier .calendrier-table .table .table-tbody tr th {
   width: 90px;
-  height: 28px;
+  height: 30px;
   display: inline-block;
   position: sticky;
   top: 0;
