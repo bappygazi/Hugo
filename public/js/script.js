@@ -1,8 +1,16 @@
 /** @format */
 
 $(function () {
-  $(".coaching-details active").click(function () {
-    $(".coaching detailsPopUp").removeClass("d-none");
-    $(this).addClass("d-block");
+  $(".table-hover a").click(function () {
+    // Check for active
+    $(".table-hover tbody a").removeClass("active");
+    $(this).parent().addClass("active");
+
+    // Display active tab
+    let currentTab = $(this).attr("href");
+    $(".detailsPopUp").hide();
+    $(currentTab).show();
+
+    return false;
   });
 });

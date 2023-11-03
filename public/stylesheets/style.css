@@ -32,6 +32,16 @@
 }
 
 /** @format */
+@media (min-width: 1300px) and (max-width: 1470px) {
+  .profile__content-calendrier .calendrier-table .table .table-tbody {
+    width: 35% !important;
+  }
+}
+@media (min-width: 1475px) and (max-width: 1600px) {
+  .profile__content-calendrier .calendrier-table .table .table-tbody {
+    width: 38% !important;
+  }
+}
 /**
  * ==========================================================================
  *    #GENERIC
@@ -357,10 +367,11 @@ p {
   vertical-align: middle;
 }
 .profile__content-coaching-detailsPopUp {
-  top: -100px;
+  top: -50px;
   right: 50px;
   width: 390px;
   border-radius: 26px;
+  opacity: 0;
 }
 .profile__content-calendrier .title h4 span {
   width: 25px !important;
@@ -474,4 +485,8 @@ p {
   border-radius: 50%;
   position: absolute;
   background-color: #8768ae;
+}
+
+.profile .profile__content .coaching .profile__content-coaching .coaching-items .coaching-details:hover .profile .coaching .detailsPopUp {
+  opacity: 1 !important;
 }/*# sourceMappingURL=style.css.map */
