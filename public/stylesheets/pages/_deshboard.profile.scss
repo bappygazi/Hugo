@@ -171,15 +171,13 @@
             white-space: nowrap;
             height: 306px;
             width: 42%;
-            &::-webkit-scrollbar,
-            ::-moz-scrollbar {
+            &::-webkit-scrollbar {
               width: 14px;
               height: 14px;
             }
 
             /* Track */
-            &::-webkit-scrollbar-track,
-            ::-moz-scrollbar-track {
+            &::-webkit-scrollbar-track {
               padding: 0;
               z-index: 2;
               position: fixed;
@@ -187,16 +185,14 @@
             }
 
             /* Handle */
-            &::-webkit-scrollbar-thumb,
-            ::-moz-scrollbar-thumb {
+            &::-webkit-scrollbar-thumb {
               border-radius: 30px;
               border: 1px solid $gray-color;
               background: $gray-color-25;
             }
 
             /* Handle on hover */
-            &::-webkit-scrollbar-thumb:hover,
-            ::-moz-scrollbar-thumb:hover {
+            &::-webkit-scrollbar-thumb:hover {
               background: $gray-color;
             }
             tr {

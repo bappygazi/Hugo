@@ -437,26 +437,22 @@ h6 {
   /* Handle */
   /* Handle on hover */
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar,
-.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar {
   width: 14px;
   height: 14px;
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-track,
-.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar-track {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-track {
   padding: 0;
   z-index: 2;
   position: fixed;
   right: 0;
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb,
-.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar-thumb {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb {
   border-radius: 30px;
   border: 1px solid #afafaf;
   background: rgba(175, 175, 175, 0.25);
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb:hover,
-.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar-thumb:hover {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb:hover {
   background: #afafaf;
 }
 .profile__content-calendrier .calendrier-table .table .table-tbody tr th {
