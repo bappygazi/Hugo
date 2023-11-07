@@ -1,16 +1,22 @@
 /** @format */
-
+// profile coaching item popup - Page: deshbord.profile//
 $(function () {
-  $(".table-hover a").click(function () {
-    // Check for active
-    $(".table-hover tbody a").removeClass("active");
-    $(this).parent().addClass("active");
+  $("#coachingActive").mouseover(function () {
+    $("#detailsPopUp").css("display", "block");
+  });
+  $("#detailsPopUp").mouseover(function () {
+    $("#detailsPopUp").css("display", "block");
+  });
+  $("#detailsPopUp").mouseout(function () {
+    $("#detailsPopUp").css("display", "none");
+  });
+  $("#coachingActive").mouseout(function () {
+    $("#detailsPopUp").css("display", "none");
+  });
 
-    // Display active tab
-    let currentTab = $(this).attr("href");
-    $(".detailsPopUp").hide();
-    $(currentTab).show();
-
-    return false;
+  // availability table selected - Page: deshbord.profile-edit//
+  $(".availability-table .available").on("click", function () {
+    $(this).toggleClass("selected");
+    getValues();
   });
 });

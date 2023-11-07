@@ -39,16 +39,27 @@
       .title {
         border-top-left-radius: 26px;
         border-top-right-radius: 26px;
+        h4 {
+          .counter-itmes {
+            width: 30px;
+            height: 30px;
+          }
+        }
         .big-screen-icon {
           a {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
+            line-height: 27px;
             text-align: center;
           }
         }
       }
       .table {
         font-size: $font-size-table;
+
+        @media (max-width: 767.98px) {
+          font-size: $font-size-table-m;
+        }
 
         .valide {
           vertical-align: middle;
@@ -92,17 +103,19 @@
             vertical-align: middle;
           }
         }
-        // .coaching-details:hover .coaching .detailsPopUp {
-        //   opacity: 1;
-        // }
+        .coaching-details {
+          transition: all linear 0.3s !important;
+        }
       }
 
       &-detailsPopUp {
         top: -50px;
         right: 50px;
-        width: 390px;
+        max-width: 425px;
         border-radius: 26px;
-        opacity: 0;
+        display: none;
+        transition: all linear 0.3s !important;
+        font-size: $font-size-table;
       }
     }
     &-calendrier {
@@ -158,13 +171,15 @@
             white-space: nowrap;
             height: 306px;
             width: 42%;
-            &::-webkit-scrollbar {
+            &::-webkit-scrollbar,
+            ::-moz-scrollbar {
               width: 14px;
               height: 14px;
             }
 
             /* Track */
-            &::-webkit-scrollbar-track {
+            &::-webkit-scrollbar-track,
+            ::-moz-scrollbar-track {
               padding: 0;
               z-index: 2;
               position: fixed;
@@ -172,14 +187,16 @@
             }
 
             /* Handle */
-            &::-webkit-scrollbar-thumb {
+            &::-webkit-scrollbar-thumb,
+            ::-moz-scrollbar-thumb {
               border-radius: 30px;
               border: 1px solid $gray-color;
               background: $gray-color-25;
             }
 
             /* Handle on hover */
-            &::-webkit-scrollbar-thumb:hover {
+            &::-webkit-scrollbar-thumb:hover,
+            ::-moz-scrollbar-thumb:hover {
               background: $gray-color;
             }
             tr {
@@ -239,13 +256,3 @@
     }
   }
 }
-.profile .profile__content .coaching .profile__content-coaching .coaching-items .coaching-details:hover .profile .coaching .detailsPopUp {
-  opacity: 1 !important;
-}
-
-// .coaching {
-//   .profile__content-coaching .coaching-items .coaching-details:hover .coaching-icon {
-//     // opacity: 1 !important;
-//     background-color: red;
-//   }
-// }

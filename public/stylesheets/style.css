@@ -146,6 +146,11 @@ h3 {
 h4 {
   font-size: 1.125rem;
 }
+@media (max-width: 767.98px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
 
 h5 {
   font-size: 1rem;
@@ -154,9 +159,10 @@ h5 {
 h6 {
   font-size: 0.875rem;
 }
-
-p {
-  font-size: 0.875rem;
+@media (max-width: 767.98px) {
+  h6 {
+    font-size: 0.6875rem;
+  }
 }
 
 /**
@@ -321,13 +327,23 @@ p {
   border-top-left-radius: 26px;
   border-top-right-radius: 26px;
 }
+.profile__content-randez .title h4 .counter-itmes {
+  width: 30px;
+  height: 30px;
+}
 .profile__content-randez .title .big-screen-icon a {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
   text-align: center;
 }
 .profile__content-randez .table {
   font-size: 0.875rem;
+}
+@media (max-width: 767.98px) {
+  .profile__content-randez .table {
+    font-size: 0.625rem !important;
+  }
 }
 .profile__content-randez .table .valide {
   vertical-align: middle;
@@ -366,12 +382,19 @@ p {
 .profile__content-coaching .coaching-items .table tbody {
   vertical-align: middle;
 }
+.profile__content-coaching .coaching-items .coaching-details {
+  -webkit-transition: all linear 0.3s !important;
+  transition: all linear 0.3s !important;
+}
 .profile__content-coaching-detailsPopUp {
   top: -50px;
   right: 50px;
-  width: 390px;
+  max-width: 425px;
   border-radius: 26px;
-  opacity: 0;
+  display: none;
+  -webkit-transition: all linear 0.3s !important;
+  transition: all linear 0.3s !important;
+  font-size: 0.875rem;
 }
 .profile__content-calendrier .title h4 span {
   width: 25px !important;
@@ -422,22 +445,26 @@ p {
   /* Handle */
   /* Handle on hover */
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar,
+.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar {
   width: 14px;
   height: 14px;
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-track {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-track,
+.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar-track {
   padding: 0;
   z-index: 2;
   position: fixed;
   right: 0;
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb,
+.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar-thumb {
   border-radius: 30px;
   border: 1px solid #afafaf;
   background: rgba(175, 175, 175, 0.25);
 }
-.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb:hover {
+.profile__content-calendrier .calendrier-table .table .table-tbody::-webkit-scrollbar-thumb:hover,
+.profile__content-calendrier .calendrier-table .table .table-tbody ::-moz-scrollbar-thumb:hover {
   background: #afafaf;
 }
 .profile__content-calendrier .calendrier-table .table .table-tbody tr th {
@@ -487,6 +514,62 @@ p {
   background-color: #8768ae;
 }
 
-.profile .profile__content .coaching .profile__content-coaching .coaching-items .coaching-details:hover .profile .coaching .detailsPopUp {
-  opacity: 1 !important;
+/** @format */
+/*======================================= 
+        profile edit scss 
+=========================================*/
+.profile-edit__content,
+.profile__content {
+  border-radius: 20px;
+}
+.profile-edit__content-title,
+.profile__content-title {
+  height: 45px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.profile-edit__content-title i,
+.profile__content-title i {
+  width: 25px;
+  height: 25px;
+  line-height: 23px;
+}
+.profile-edit__content-title i img,
+.profile__content-title i img {
+  width: 15px;
+}
+.profile-edit__content .password-modifi,
+.profile__content .password-modifi {
+  width: 350px;
+}
+.profile-edit__content .password-modifi .form-control,
+.profile__content .password-modifi .form-control {
+  height: 40px;
+  border: solid 1px rgba(175, 175, 175, 0.25) !important;
+}
+.profile-edit__setting-info .profile-img a,
+.profile__setting-info .profile-img a {
+  height: 25px;
+  width: 25px;
+}
+.profile-edit__availability .table,
+.profile__availability .table {
+  --bs-table-bg: none;
+}
+.profile-edit__availability .table th,
+.profile-edit__availability .table td,
+.profile__availability .table th,
+.profile__availability .table td {
+  height: 30px;
+  vertical-align: middle;
+}
+.profile-edit__availability .table tbody .available,
+.profile__availability .table tbody .available {
+  height: 30px;
+  width: 13%;
+  cursor: pointer;
+}
+.profile-edit__availability .table tbody .available.selected,
+.profile__availability .table tbody .available.selected {
+  background-color: #8768ae;
 }/*# sourceMappingURL=style.css.map */
