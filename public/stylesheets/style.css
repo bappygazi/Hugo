@@ -172,15 +172,6 @@ h6 {
  *
  * @format
  */
-.c-btn {
-  display: inline-block;
-  vertical-align: middle;
-  font: inherit;
-  text-align: center;
-  margin: 0;
-  cursor: pointer;
-}
-
 /* Style variants
    ========================================================================== */
 .c-btn-primary {
@@ -190,6 +181,7 @@ h6 {
   padding-right: 40px;
   border-radius: 6px;
   font-weight: bold;
+  vertical-align: middle !important;
   color: #ffaa87;
   font-size: 1.25rem;
   background-color: #8768ae !important;
