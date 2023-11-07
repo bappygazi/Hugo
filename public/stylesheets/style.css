@@ -3,32 +3,36 @@
 /* ==========================================================================
    COLORS / SETTINGS
    ========================================================================== */
+.bg-white-2 {
+  background-color: #efefef !important;
+}
+
+.bg-white-3 {
+  background-color: #f4f4f4 !important;
+}
+
 .text-primary {
   color: #8768ae !important;
+}
+
+.bg-primary {
+  background-color: #8768ae !important;
 }
 
 .text-secondary {
   color: #ffaa87 !important;
 }
 
-.text-dark {
-  color: #323232 !important;
-}
-
 .bg-secondary {
   background-color: #ffaa87 !important;
-}
-
-.bg-white-2 {
-  background-color: #efefef !important;
 }
 
 .bg-tertiary {
   background-color: #fadfd3 !important;
 }
 
-.bg-primary {
-  background-color: #8768ae !important;
+.text-dark {
+  color: #323232 !important;
 }
 
 /** @format */
@@ -560,4 +564,56 @@ h6 {
 .profile-edit__availability .table tbody .available.selected,
 .profile__availability .table tbody .available.selected {
   background-color: #8768ae;
+}
+
+/** @format */
+.profile__coaching-list {
+  height: 100vh;
+  overflow-y: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.profile__coaching-list::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+.profile__coaching-list::-webkit-scrollbar-track {
+  padding: 0;
+  z-index: 2;
+  right: 0;
+}
+.profile__coaching-list::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  border: 1px solid #afafaf;
+  background: rgba(175, 175, 175, 0.25);
+}
+.profile__coaching-list::-webkit-scrollbar-thumb:hover {
+  background: #afafaf;
+}
+.profile__coaching-list .coaching-item {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media (max-width: 1399.98px) {
+  .profile__coaching-list .coaching-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.profile__coaching-list .coaching-item-content .text-icon a {
+  width: 25px;
+  height: 25px;
+}
+.profile__coaching-list .coaching-item-content.border {
+  border-color: #efefef !important;
+}
+.profile__coaching-list .coaching-item.active::after {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(175, 175, 175, 0.6);
 }/*# sourceMappingURL=style.css.map */
