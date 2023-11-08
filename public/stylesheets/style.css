@@ -533,7 +533,7 @@ h6 {
 }
 .profile-edit__content .password-modifi,
 .profile__content .password-modifi {
-  width: 350px;
+  max-width: 350px;
 }
 .profile-edit__content .password-modifi .form-control,
 .profile__content .password-modifi .form-control {
