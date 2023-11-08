@@ -16,17 +16,17 @@
         right: 20px;
         a {
           &.view {
-            line-height: 15px;
+            line-height: 20px;
           }
-          width: 25px;
-          height: 25px;
+          width: 30px;
+          height: 30px;
           line-height: 0px;
           padding: 5.5px;
         }
       }
     }
     &-presentation {
-      border-radius: 6px;
+      border-radius: 12px;
       p {
         line-height: 17px;
         font-size: 13px;
@@ -37,6 +37,7 @@
     &-randez {
       border-radius: 26px;
       .title {
+        height: 60px;
         border-top-left-radius: 26px;
         border-top-right-radius: 26px;
         h4 {
@@ -49,7 +50,7 @@
           a {
             width: 30px;
             height: 30px;
-            line-height: 27px;
+            line-height: 29px;
             text-align: center;
           }
         }
@@ -68,8 +69,8 @@
             text-align: right;
           }
           a {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
             line-height: 14px;
           }
         }
@@ -122,9 +123,9 @@
       .title {
         h4 {
           span {
-            width: 25px !important;
-            height: 25px !important;
-            line-height: 15px;
+            width: 30px !important;
+            height: 30px !important;
+            line-height: 20px;
             text-align: center;
           }
         }

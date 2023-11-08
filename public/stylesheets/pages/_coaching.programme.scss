@@ -1,7 +1,6 @@
 /** @format */
 .profile {
   &__coaching-list {
-    height: 100vh;
     overflow-y: auto;
     &::-webkit-scrollbar {
       width: 14px;
@@ -30,8 +29,8 @@
       padding-left: 80px;
       padding-right: 80px;
       @media (max-width: 1399.98px) {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
       }
       &-content {
         .text-icon {

@@ -35,6 +35,10 @@
   color: #323232 !important;
 }
 
+.text-gray {
+  color: #afafaf;
+}
+
 /** @format */
 @media (min-width: 1300px) and (max-width: 1470px) {
   .profile__content-calendrier .calendrier-table .table .table-tbody {
@@ -301,16 +305,16 @@ h6 {
   right: 20px;
 }
 .profile__setting-info .view-edit-icon a {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   line-height: 0px;
   padding: 5.5px;
 }
 .profile__setting-info .view-edit-icon a.view {
-  line-height: 15px;
+  line-height: 20px;
 }
 .profile__setting-presentation {
-  border-radius: 6px;
+  border-radius: 12px;
 }
 .profile__setting-presentation p {
   line-height: 17px;
@@ -320,6 +324,7 @@ h6 {
   border-radius: 26px;
 }
 .profile__content-randez .title {
+  height: 60px;
   border-top-left-radius: 26px;
   border-top-right-radius: 26px;
 }
@@ -330,7 +335,7 @@ h6 {
 .profile__content-randez .title .big-screen-icon a {
   width: 30px;
   height: 30px;
-  line-height: 27px;
+  line-height: 29px;
   text-align: center;
 }
 .profile__content-randez .table {
@@ -349,8 +354,8 @@ h6 {
   text-align: right;
 }
 .profile__content-randez .table .valide a {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   line-height: 14px;
 }
 .profile__content-randez .custom-screen-size {
@@ -393,9 +398,9 @@ h6 {
   font-size: 0.875rem;
 }
 .profile__content-calendrier .title h4 span {
-  width: 25px !important;
-  height: 25px !important;
-  line-height: 15px;
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 20px;
   text-align: center;
 }
 .profile__content-calendrier .calendrier-summary .arrow {
@@ -516,19 +521,15 @@ h6 {
 }
 .profile-edit__content-title,
 .profile__content-title {
-  height: 45px;
+  height: 60px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 .profile-edit__content-title i,
 .profile__content-title i {
-  width: 25px;
-  height: 25px;
-  line-height: 23px;
-}
-.profile-edit__content-title i img,
-.profile__content-title i img {
-  width: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
 }
 .profile-edit__content .password-modifi,
 .profile__content .password-modifi {
@@ -568,7 +569,6 @@ h6 {
 
 /** @format */
 .profile__coaching-list {
-  height: 100vh;
   overflow-y: auto;
   /* Track */
   /* Handle */
@@ -597,8 +597,8 @@ h6 {
 }
 @media (max-width: 1399.98px) {
   .profile__coaching-list .coaching-item {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 .profile__coaching-list .coaching-item-content .text-icon a {
@@ -616,4 +616,59 @@ h6 {
   height: 100%;
   position: absolute;
   background-color: rgba(175, 175, 175, 0.6);
+}
+
+/** @format */
+.profile__setting-chat {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8768ae), color-stop(50%, rgb(179, 128, 160)), to(#ffaa87));
+  background: linear-gradient(0deg, #8768ae 0%, rgb(179, 128, 160) 50%, #ffaa87 100%);
+}
+.profile__chat-terminal {
+  font-size: 0.875rem !important;
+}
+.profile__chat-terminal .coaching-item-content .btn {
+  font-size: 0.625rem !important;
+}
+.profile__chat-table .status-items {
+  width: 130px;
+}
+.profile__chat-table .icon {
+  height: 30px;
+  width: 30px;
+  line-height: 28px;
+}
+.profile__chat-table .terminal-create .btn {
+  font-size: 0.625rem !important;
+}
+.profile__chat-box {
+  border-radius: 25px;
+}
+.profile__chat-box .title {
+  height: 60px;
+}
+.profile__chat-box .chat-list {
+  height: 75%;
+  font-size: 0.9375rem;
+}
+@media (max-width: 991.98px) {
+  .profile__chat-box .chat-list {
+    height: auto;
+  }
+}
+.profile__chat-box .chat-list .message-content .message-img img {
+  width: 45px;
+}
+.profile__chat-box .chat-list .message-content .message-text p {
+  padding: 12px 16px;
+  border-radius: 12px;
+}
+.profile__chat-box .chat-input .form-control {
+  padding-right: 40px;
+}
+.profile__chat-box .chat-input a {
+  top: 14px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }/*# sourceMappingURL=style.css.map */
