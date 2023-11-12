@@ -1,0 +1,62 @@
+/** @format */
+.profile {
+  &__content {
+    &-randez {
+      .title-plan {
+        border-color: $secondary-color !important;
+        h4 {
+          a {
+            width: 30px;
+            height: 30px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+  &__plan {
+    height: 78%;
+    &::-webkit-scrollbar {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      padding: 0;
+      z-index: 2;
+      position: fixed;
+      right: 0;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 30px;
+      border: 1px solid $gray-color;
+      background: $gray-color-25;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $gray-color;
+    }
+    .title-input {
+      input {
+        height: 40px;
+      }
+    }
+    .btn {
+      font-size: $font-size-table-m;
+    }
+    .table {
+      a {
+        width: 30px;
+        height: 30px;
+        line-height: 27px;
+      }
+      th {
+        width: 65px;
+      }
+    }
+  }
+}

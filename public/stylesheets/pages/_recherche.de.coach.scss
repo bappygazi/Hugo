@@ -1,0 +1,66 @@
+/** @format */
+.profile {
+  &__reacherche {
+    .profile__coaching-list {
+      height: 71vh;
+    }
+    .searchBar {
+      .form-control {
+        height: 50px;
+        &:focus,
+        :active {
+          border: 1px solid $dark !important;
+        }
+      }
+    }
+    &-items {
+      max-width: 380px;
+    }
+    .coaching-item-content {
+      p {
+        font-size: $font-size-table;
+      }
+    }
+  }
+  &__schedule {
+    width: 275px;
+    &-text {
+      border: 1px solid $primary-color;
+    }
+    .btn {
+      height: 30px;
+      font-size: 12px;
+    }
+    .modal {
+      background-color: $secondary-color-2;
+      .modal-dialog {
+        max-width: 70%;
+        .modal-content {
+          border-radius: 26px;
+        }
+      }
+    }
+    .profile__content {
+      &-calendrier {
+        .calendrier-table {
+          .table {
+            .table-tbody {
+              height: 70vh;
+              width: 64%;
+              tr {
+                td {
+                  width: 150px;
+                }
+                .time-schedule {
+                  .time-schedule-item {
+                    height: 62px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,6 +35,10 @@
   color: #323232 !important;
 }
 
+.bg-gray {
+  background-color: #afafaf;
+}
+
 .text-gray {
   color: #afafaf;
 }
@@ -224,10 +228,6 @@ h6 {
   color: #3774a2;
 }
 
-/** @format */
-/* ==========================================================================
-   Home / pages
-   ========================================================================== */
 /** @format */
 .navbar .navbar-nav .nav-item .badge {
   top: 5px !important;
@@ -671,4 +671,111 @@ h6 {
   width: 30px;
   height: 30px;
   line-height: 30px;
+}
+
+/** @format */
+.profile__content-randez .title-plan {
+  border-color: #ffaa87 !important;
+}
+.profile__content-randez .title-plan h4 a {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+}
+.profile__plan {
+  height: 78%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.profile__plan::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+.profile__plan::-webkit-scrollbar-track {
+  padding: 0;
+  z-index: 2;
+  position: fixed;
+  right: 0;
+}
+.profile__plan::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  border: 1px solid #afafaf;
+  background: rgba(175, 175, 175, 0.25);
+}
+.profile__plan::-webkit-scrollbar-thumb:hover {
+  background: #afafaf;
+}
+.profile__plan .title-input input {
+  height: 40px;
+}
+.profile__plan .btn {
+  font-size: 0.625rem !important;
+}
+.profile__plan .table a {
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+}
+.profile__plan .table th {
+  width: 65px;
+}
+
+/** @format */
+.profile__content-randez .seances-table .table a {
+  width: 30px;
+  height: 30px;
+  line-height: 27px;
+}
+@media (max-width: 767.98px) {
+  .profile__content-randez .seances-table .table .planifier {
+    width: 110px;
+  }
+}
+
+/** @format */
+.profile__reacherche .profile__coaching-list {
+  height: 71vh;
+}
+.profile__reacherche .searchBar .form-control {
+  height: 50px;
+}
+.profile__reacherche .searchBar .form-control:focus,
+.profile__reacherche .searchBar .form-control :active {
+  border: 1px solid #323232 !important;
+}
+.profile__reacherche-items {
+  max-width: 380px;
+}
+.profile__reacherche .coaching-item-content p {
+  font-size: 0.875rem;
+}
+.profile__schedule {
+  width: 275px;
+}
+.profile__schedule-text {
+  border: 1px solid #8768ae;
+}
+.profile__schedule .btn {
+  height: 30px;
+  font-size: 12px;
+}
+.profile__schedule .modal {
+  background-color: rgba(255, 170, 135, 0.2);
+}
+.profile__schedule .modal .modal-dialog {
+  max-width: 70%;
+}
+.profile__schedule .modal .modal-dialog .modal-content {
+  border-radius: 26px;
+}
+.profile__schedule .profile__content-calendrier .calendrier-table .table .table-tbody {
+  height: 70vh;
+  width: 64%;
+}
+.profile__schedule .profile__content-calendrier .calendrier-table .table .table-tbody tr td {
+  width: 150px;
+}
+.profile__schedule .profile__content-calendrier .calendrier-table .table .table-tbody tr .time-schedule .time-schedule-item {
+  height: 62px;
 }/*# sourceMappingURL=style.css.map */

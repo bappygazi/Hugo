@@ -1,0 +1,218 @@
+<!-- @format -->
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HUGO | Ressources Humanisees</title>
+    <!--  bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- google font Montserrat  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- custom stylesheet link  -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <!-- navbar part html start  -->
+    <nav class="navbar navbar-expand-lg bg-white d-block">
+      <div class="container-fluid profile-container">
+        <a class="navbar-brand" href="#"><img src="./img/logos/nav-logo.png" alt="logo.png" class="img-fluid" /></a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-lg-4" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Proﬁl</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Rendez-vous</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Calendrier</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item px-3 d-flex align-items-center">
+              <a class="position-relative" href="#">
+                <img src="./img/nav-icon/ball-icon.png" alt="ball-icon.png" class="img-fluid" />
+                <span class="position-absolute top-0 start-100 translate-middle text-dark badge rounded-circle bg-secondary p-1">
+                  12
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="d-flex align-items-center" href="#">
+                <img src="./img/nav-icon/nav-profile-icon.png" alt="profile-icon" class="img-fluid rounded-circle" />
+                <div class="profile-icon ms-3">
+                  <h6 class="fw-normal text-dark">DUPONT</h6>
+                  <p class="fw-normal mb-0 text-dark">Jean-Claude</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar part html end  -->
+
+    <!-- profile part html start  -->
+    <div class="profile mt-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="profile__setting bg-white-2 shadow overflow-hidden mb-4">
+              <div class="profile__setting-info text-center pt-3 pb-4 position-relative">
+                <div class="profile-img text-center pt-xl-4 mb-3">
+                  <img src="./img/profile-icon/profile-icon.png" alt="profile-icon.png" class="img-fluid" />
+                </div>
+                <h4 class="text-white">Dupont</h4>
+                <p class="text-white mb-1">Jean-Claude</p>
+                <h4 class="text-primary">Coach Certiﬁé</h4>
+                <div class="view-edit-icon position-absolute">
+                  <a class="bg-tertiary view d-inline-block p-1 rounded-circle me-2" href="#"><img src="./img/profile-icon/profile-view.svg" alt="profile-view.png" class="img-fluid" /></a>
+                  <a class="bg-tertiary d-inline-block rounded-circle" href="#"><img src="./img/profile-icon/profile-edit.svg" alt="profile-edit.png" class="img-fluid" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="profile__setting bg-white-2 shadow overflow-hidden">
+              <div class="profile__setting-info profile__setting-chat text-center pt-3 pb-4 position-relative">
+                <div class="profile-img text-center pt-xl-4 mb-3">
+                  <img src="./img/coaching-chat/profile-img.png" alt="profile-icon.png" class="img-fluid" />
+                </div>
+                <h4 class="text-white">Montaigne</h4>
+                <p class="text-white mb-1">Sophie</p>
+                <div class="view-edit-icon position-absolute">
+                  <a class="bg-tertiary view d-inline-block p-1 rounded-circle me-2" href="#"><img src="./img/profile-icon/profile-view.svg" alt="profile-view.png" class="img-fluid" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="profile-edit__logo text-center pt-5 mx-4">
+              <a href="#"><img src="./img/logos/logo-transparent.png" alt="logo-transparent.png" class="img-fluid" /></a>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="profile__content-randez profile__content-coaching bg-white-2 shadow overflow-hidden position-relative h-100">
+              <div class="title d-flex justify-content-between p-3 align-items-center">
+                <h4 class="text-white d-flex align-items-center">
+                  <a href="#" class="bg-secondary flex-shrink-0 counter-itmes text-center rounded-circle text-dark me-2 d-flex justify-content-center align-items-center"><img width="16" src="./img/coaching-session/bar.svg" alt="bar.svg" /></a> <span class="fw-bold">Séance de <b class="fw-bold text-secondary">Coaching </b></span>
+                </h4>
+                <div class="big-screen-icon">
+                  <a class="bg-tertiary rounded-circle d-inline-block" href="#"><img src="./img/profile-icon/left-arrow.png" alt="left-arrow.png" class="img-fluid" /></a>
+                </div>
+              </div>
+              <div class="title-plan bg-primary rounded-0 d-flex justify-content-between px-4 py-3 align-items-center border-top">
+                <h4 class="text-white d-flex align-items-center">
+                  <a href="#" class="bg-secondary flex-shrink-0 counter-itmes text-center rounded-circle text-dark me-2 d-flex justify-content-center align-items-center"><img width="16" src="./img/coaching-chat/time-edit.svg" alt="time-edit.svg" /></a> <span class="fw-normal"><b class="fw-bold">À planifier </b></span>
+                </h4>
+              </div>
+              <div class="profile__plan overflow-auto">
+                <div class="py-4 px-4">
+                  <label for="title" class="form-label mb-1 fw-bold">Titre de la séance</label>
+                  <div class="title-input position-relative">
+                    <input type="text" class="form-control rounded-2 ps-3 pe-4 bg-white" id="title" value="Séance 3" aria-describedby="textHelp" />
+                    <a class="position-absolute top-50 end-0 translate-middle-y me-3" href="#"><img width="15" src="./img/profile-edit-icon/close-black.svg" alt="close-black.svg" /></a>
+                  </div>
+                </div>
+                <div class="py-4 bg-white-3 px-4">
+                  <label for="description" class="form-label mb-1 fw-bold">Description</label>
+                  <div class="title-input position-relative">
+                    <textarea type="text" class="form-control bg-white rounded-2 ps-3 pe-4" id="description" rows="3" aria-describedby="textHelp"></textarea>
+                  </div>
+                </div>
+                <div class="py-4 px-4">
+                  <label for="title" class="form-label mb-1 fw-bold">Lien Visio</label>
+                  <div class="title-input position-relative">
+                    <input type="text" class="form-control rounded-2 ps-3 pe-4 bg-white" id="title" value="http://www.zoom.com/?d=9fd90fdf" aria-describedby="textHelp" />
+                    <a class="position-absolute top-50 end-0 translate-middle-y me-3" href="#"><img width="15" src="./img/profile-edit-icon/close-black.svg" alt="close-black.svg" /></a>
+                  </div>
+                </div>
+                <div class="py-4 bg-white-3 px-4">
+                  <div class="btn bg-secondary fw-bold border rounded-2">VALIDER</div>
+                  <div class="btn bg-dark text-secondary fw-bold border-0 rounded-2">ANNULER LA SÉANCE</div>
+                </div>
+                <div class="profile__chat-table bg-secondary py-4 px-4 d-flex justify-content-between align-items-center">
+                  <h5>Proposition de créneaux</h5>
+                  <div class="terminal-create">
+                    <a href="#" class="icon me-2 bg-secondary d-inline-block rounded-circle text-center border border-dark"><img width="17" src="./img/coaching-chat/plus.svg" alt="img" class="img-fluid" /></a>
+                    <button class="bg-secondary p-0 fw-bold px-3 btn rounded-2 py-2 me-2 border border-dark">AJOUTER UNE NOUVELLE SÉANCE</button>
+                  </div>
+                </div>
+                <div class="bg-white pb-5">
+                  <table class="table align-middle border-light table-striped mb-0">
+                    <tbody>
+                      <tr>
+                        <th class="ps-4" scope="col">
+                          <a class="d-flex align-items justify-content-center bg-dark rounded-circle" href="#"><img width="14" src="./img/profile-edit-icon/profile-close.svg" alt="profile-close.svg" /></a>
+                        </th>
+                        <td>Mardi 22 juillet 2023</td>
+                        <td class="pe-4">11h00</td>
+                        <td class="pe-4"></td>
+                      </tr>
+                      <tr>
+                        <th class="ps-4" scope="row"></th>
+                        <td>Lundi 25 juillet 2023</td>
+                        <td>15h15</td>
+                        <td class="pe-4"><button class="btn fw-bold border-0 px-3 rounded-2 bg-secondary me-2">ACCEPTER</button><button class="btn bg-dark px-3 text-secondary border-0 rounded-2 fw-bold">REFUSER</button></td>
+                      </tr>
+                      <tr>
+                        <th class="ps-4" scope="row"></th>
+                        <td>Mercredi</td>
+                        <td>09h30</td>
+                        <td class="pe-4"><button class="btn fw-bold border-0 px-3 rounded-2 bg-secondary me-2">ACCEPTER</button><button class="btn bg-dark px-3 text-secondary border-0 rounded-2 fw-bold">REFUSER</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="profile__chat-box overflow-hidden shadow bg-white-2 h-100">
+              <div class="title px-3 bg-primary d-flex align-items-center">
+                <h4 class="text-white">Chat - <span class="text-secondary">MONTAIGNE</span> <span class="fw-light fst-italic text-secondary">Sophie</span></h4>
+              </div>
+              <div class="chat-list bg-white px-3 mb-3 pt-4">
+                <div class="message-content d-flex align-items-center">
+                  <div class="flex-shrink-0 message-img me-2">
+                    <a href="#"><img src="./img/coaching-chat/profile-img.png" alt="img" /></a>
+                  </div>
+                  <div class="message-text">
+                    <a href="#" class="fw-medium text-primary ps-3 py-0 mb-0">Montaigne Sophie <span class="text-gray ms-1">14:19</span></a>
+                    <p class="bg-white-2 fw-medium">Bonjour Monsieur le Coach</p>
+                  </div>
+                </div>
+                <div class="message-content d-flex align-items-center justify-content-end">
+                  <div class="message-text text-end">
+                    <a href="#" class="fw-medium text-secondary pe-3 py-0 mb-0">Le Coach <span class="text-gray ms-1">14:19</span></a>
+                    <p class="bg-white-2 fw-medium">Bonjour Monsieur le Coach</p>
+                  </div>
+                  <div class="flex-shrink-0 message-img ms-2">
+                    <a href="#"><img src="./img/profile-icon/profile-icon.png" alt="img" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-input mt-2 bg-white border-top border-dark">
+                <div class="position-relative">
+                  <textarea type="text" class="form-control ps-3 pt-3" id="message" rows="5" aria-describedby="emailHelp" placeholder="Saisir le message ici..."></textarea>
+                  <a class="position-absolute d-inline-block text-center bg-white-2 rounded-circle" href="#"><img width="15" src="./img/coaching-chat/chat-send.svg" alt="chat-send.svg" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile part html end  -->
+
+    <!--  jquery script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--  bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom script  -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+/** @format */
+.profile {
+  &__content {
+    &-randez {
+      .seances-table {
+        .table {
+          a {
+            width: 30px;
+            height: 30px;
+            line-height: 27px;
+          }
+          .planifier {
+            @media (max-width: 767.98px) {
+              width: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,9 +15,16 @@
 @import "components/buttons";
 
 //PAGES
-@import "pages/home";
+@import "blocks/header";
+// deshboard
 @import "pages/login";
 @import "pages/deshboard.profile";
 @import "pages/profile-edit";
+// list - programme
 @import "pages/coaching.programme";
 @import "pages/coaching.chat.programme";
+@import "pages/coaching.session";
+// Page Liste Seances
+@import "pages/liste.des.séances";
+// Page Recherche
+@import "pages/recherche.de.coach";
