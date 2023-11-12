@@ -771,7 +771,7 @@ h6 {
 }
 .profile__schedule .profile__content-calendrier .calendrier-table .table .table-tbody {
   height: 70vh;
-  width: 64%;
+  width: 100vh !important;
 }
 .profile__schedule .profile__content-calendrier .calendrier-table .table .table-tbody tr td {
   width: 150px;
