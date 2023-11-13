@@ -301,8 +301,8 @@ h6 {
   font-size: 1rem;
 }
 .profile__setting-info .view-edit-icon {
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 10px;
 }
 .profile__setting-info .view-edit-icon a {
   width: 30px;
@@ -573,6 +573,9 @@ h6 {
   /* Track */
   /* Handle */
   /* Handle on hover */
+}
+.profile__coaching-list.course-list {
+  height: 75vh;
 }
 .profile__coaching-list::-webkit-scrollbar {
   width: 14px;

@@ -2,6 +2,9 @@
 .profile {
   &__coaching-list {
     overflow-y: auto;
+    &.course-list {
+      height: 75vh;
+    }
     &::-webkit-scrollbar {
       width: 14px;
       height: 14px;
