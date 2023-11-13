@@ -10,6 +10,24 @@
         color: $dark;
         font-size: $font-size-nav;
       }
+      .detailsPopUp {
+        top: 40px;
+        right: 0px;
+        width: 425px;
+        display: none;
+        z-index: 2;
+        border-radius: 26px;
+        font-size: $font-size-table;
+        @media (max-width: 767.98px) {
+          width: 350px;
+          right: auto;
+          left: 0;
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          right: auto;
+          left: 0;
+        }
+      }
     }
   }
 }

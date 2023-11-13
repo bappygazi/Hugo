@@ -108,16 +108,6 @@
           transition: all linear 0.3s !important;
         }
       }
-
-      &-detailsPopUp {
-        top: -50px;
-        right: 50px;
-        max-width: 425px;
-        border-radius: 26px;
-        display: none;
-        transition: all linear 0.3s !important;
-        font-size: $font-size-table;
-      }
     }
     &-calendrier {
       .title {

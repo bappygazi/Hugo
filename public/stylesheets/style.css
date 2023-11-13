@@ -237,6 +237,28 @@ h6 {
   color: #323232;
   font-size: 1.125rem;
 }
+.navbar .navbar-nav .nav-item .detailsPopUp {
+  top: 40px;
+  right: 0px;
+  width: 425px;
+  display: none;
+  z-index: 2;
+  border-radius: 26px;
+  font-size: 0.875rem;
+}
+@media (max-width: 767.98px) {
+  .navbar .navbar-nav .nav-item .detailsPopUp {
+    width: 350px;
+    right: auto;
+    left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-item .detailsPopUp {
+    right: auto;
+    left: 0;
+  }
+}
 
 /**
  * ==========================================================================
@@ -386,16 +408,6 @@ h6 {
 .profile__content-coaching .coaching-items .coaching-details {
   -webkit-transition: all linear 0.3s !important;
   transition: all linear 0.3s !important;
-}
-.profile__content-coaching-detailsPopUp {
-  top: -50px;
-  right: 50px;
-  max-width: 425px;
-  border-radius: 26px;
-  display: none;
-  -webkit-transition: all linear 0.3s !important;
-  transition: all linear 0.3s !important;
-  font-size: 0.875rem;
 }
 .profile__content-calendrier .title h4 span {
   width: 30px !important;
@@ -596,7 +608,7 @@ h6 {
 }
 .profile__coaching-list .coaching-item {
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 12px;
 }
 @media (max-width: 1399.98px) {
   .profile__coaching-list .coaching-item {

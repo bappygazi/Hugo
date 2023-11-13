@@ -23,6 +23,7 @@
         </button>
         <div class="collapse navbar-collapse ms-lg-4" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item px-3"></li>
             <li class="nav-item px-3">
               <a class="nav-link" href="#">Proﬁl</a>
             </li>
@@ -34,14 +35,59 @@
             </li>
           </ul>
           <ul class="navbar-nav flex-row">
-            <li class="nav-item px-3 d-flex align-items-center">
-              <a class="position-relative" href="#">
+            <li class="nav-item px-3 d-flex align-items-center position-relative">
+              <a class="notification position-relative" href="#">
                 <img src="./img/nav-icon/ball-icon.png" alt="ball-icon.png" class="img-fluid" />
                 <span class="position-absolute top-0 start-100 translate-middle text-dark badge rounded-circle bg-secondary p-1">
                   12
                   <span class="visually-hidden">unread messages</span>
                 </span>
               </a>
+              <!-- notification-popup start -->
+              <div id="detailsPopUp" class="profile__content-coaching-detailsPopUp detailsPopUp profile__content-randez bg-tertiary shadow position-absolute overflow-hidden">
+                <a href="#" class="coaching-details-item d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
+                  <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                  <div class="coaching-name ms-2">
+                    <h6 class="mb-0">Validation séance N°3</h6>
+                    <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                  </div>
+                  <div class="coaching-hours ms-2"><span>6 h</span></div>
+                </a>
+                <a href="#" class="coaching-details-item bg-white d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
+                  <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                  <div class="coaching-name ms-2">
+                    <h6 class="mb-0">Validation séance N°3</h6>
+                    <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                  </div>
+                  <div class="coaching-hours ms-2"><span>1 j</span></div>
+                </a>
+                <a href="#" class="coaching-details-item d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
+                  <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                  <div class="coaching-name ms-2">
+                    <h6 class="mb-0">Validation séance N°3</h6>
+                    <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                  </div>
+                  <div class="coaching-hours ms-2"><span>2 j</span></div>
+                </a>
+                <a href="#" class="coaching-details-item d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
+                  <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
+                  <div class="coaching-name ms-2">
+                    <h6 class="mb-0">Validation séance N°3</h6>
+                    <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
+                  </div>
+                  <div class="coaching-hours ms-2"><span>2 j</span></div>
+                </a>
+                <div class="custom-screen-size bg-dark m-auto position-absolute">
+                  <a href="#">
+                    <div class="m-auto text-center icon d-flex justify-content-center h-100">
+                      <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
+                      <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
+                      <span class="d-inline-block rounded-circle bg-tertiary"></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- notification-popup start -->
             </li>
             <li class="nav-item px-3">
               <a class="d-flex align-items-center" href="#">
@@ -261,52 +307,6 @@
                       </div>
                     </div>
                     <!-- profile-coaching-list -->
-
-                    <!-- profile-coaching-item-popup start -->
-                    <div id="detailsPopUp" class="profile__content-coaching-detailsPopUp detailsPopUp profile__content-randez bg-tertiary shadow position-absolute overflow-hidden">
-                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
-                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
-                        <div class="coaching-name ms-2">
-                          <h6 class="mb-0">Validation séance N°3</h6>
-                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
-                        </div>
-                        <div class="coaching-hours ms-2"><span>6 h</span></div>
-                      </div>
-                      <div class="coaching-details-item bg-white d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
-                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile.png" alt="coaching-profile.png" class="img-fluid" /></div>
-                        <div class="coaching-name ms-2">
-                          <h6 class="mb-0">Validation séance N°3</h6>
-                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
-                        </div>
-                        <div class="coaching-hours ms-2"><span>1 j</span></div>
-                      </div>
-                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
-                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
-                        <div class="coaching-name ms-2">
-                          <h6 class="mb-0">Validation séance N°3</h6>
-                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
-                        </div>
-                        <div class="coaching-hours ms-2"><span>2 j</span></div>
-                      </div>
-                      <div class="coaching-details-item d-flex align-items-center justify-content-between ps-3 ps-md-4 pe-3 pe-md-5 py-3 border-bottom border-white">
-                        <div class="coaching-profile-img d-flex flex-shrink-0"><img width="28" src="./img/profile-icon/coaching-profile2.png" alt="coaching-profile.png" class="img-fluid" /></div>
-                        <div class="coaching-name ms-2">
-                          <h6 class="mb-0">Validation séance N°3</h6>
-                          <p class="mb-0 fst-italic">J’aimerai valider mon RDV coach...</p>
-                        </div>
-                        <div class="coaching-hours ms-2"><span>2 j</span></div>
-                      </div>
-                      <div class="custom-screen-size bg-dark m-auto position-absolute">
-                        <a href="#">
-                          <div class="m-auto text-center icon d-flex justify-content-center h-100">
-                            <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
-                            <span class="d-inline-block rounded-circle bg-tertiary me-1"></span>
-                            <span class="d-inline-block rounded-circle bg-tertiary"></span>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- profile-coaching-item-popup start -->
                   </div>
                 </div>
                 <!-- rendz-vous coaching part html end-->
